@@ -1,0 +1,10 @@
+System.register(["./@babel-legacy-17757daa.js","./react-legacy-86f3d07e.js"],(function(e,t){"use strict";var n,r;return{setters:[e=>{n=e.g},e=>{r=e.r}],execute:function(){var t={exports:{}},u={},o={exports:{}},i={},a=r,c="function"==typeof Object.is?Object.is:function(e,t){return e===t&&(0!==e||1/e==1/t)||e!=e&&t!=t},s=a.useState,f=a.useEffect,l=a.useLayoutEffect,v=a.useDebugValue;function S(e){var t=e.getSnapshot;e=e.value;try{var n=t();return!c(e,n)}catch(r){return!0}}var d="undefined"==typeof window||void 0===window.document||void 0===window.document.createElement?function(e,t){return t()}:function(e,t){var n=t(),r=s({inst:{value:n,getSnapshot:t}}),u=r[0].inst,o=r[1];return l((function(){u.value=n,u.getSnapshot=t,S(u)&&o({inst:u})}),[e,n,t]),f((function(){return S(u)&&o({inst:u}),e((function(){S(u)&&o({inst:u})}))}),[e]),v(n),n};i.useSyncExternalStore=void 0!==a.useSyncExternalStore?a.useSyncExternalStore:d,o.exports=i;var y=o.exports,p=r,x=y,g="function"==typeof Object.is?Object.is:function(e,t){return e===t&&(0!==e||1/e==1/t)||e!=e&&t!=t},E=x.useSyncExternalStore,b=p.useRef,h=p.useEffect,j=p.useMemo,w=p.useDebugValue;
+/**
+       * @license React
+       * use-sync-external-store-shim/with-selector.production.min.js
+       *
+       * Copyright (c) Facebook, Inc. and its affiliates.
+       *
+       * This source code is licensed under the MIT license found in the
+       * LICENSE file in the root directory of this source tree.
+       */u.useSyncExternalStoreWithSelector=function(e,t,n,r,u){var o=b(null);if(null===o.current){var i={hasValue:!1,value:null};o.current=i}else i=o.current;o=j((function(){function e(e){if(!c){if(c=!0,o=e,e=r(e),void 0!==u&&i.hasValue){var t=i.value;if(u(t,e))return a=t}return a=e}if(t=a,g(o,e))return t;var n=r(e);return void 0!==u&&u(t,n)?t:(o=e,a=n)}var o,a,c=!1,s=void 0===n?null:n;return[function(){return e(t())},null===s?void 0:function(){return e(s())}]}),[t,n,r,u]);var a=E(e,o[0],o[1]);return h((function(){i.hasValue=!0,i.value=a}),[a]),w(a),a},t.exports=u;var m=t.exports;e("u",n(m))}}}));
